@@ -6,17 +6,17 @@
 
     public class UserBook
     {
-        public UserBook(Book bookId, User userId)
+        public UserBook(int bookid,int userid)
         {
-            BookId = bookId;
-            UserId = userId;
+            BookId = bookid;
+            UserId = userid;
             BorrowDate = DateTime.Now;
         }
-
-        public Book BookId { get; set; }
-        public User UserId { get; set; }
+        public Book Book { get; set; }
+        public int BookId { get; set; }
+        public User User { get; set; }
+        public int UserId { get; set; }
         public DateTime BorrowDate { get; set; } //Date and time, represents the date and time when the user has borrowed the book
-
 
     }
 }
